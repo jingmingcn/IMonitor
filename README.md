@@ -1,5 +1,24 @@
 Manual of IMonitor
 =====
+The cope execute file MAY NOT work due to the os version. Then, the cope exec file needs to be rebuilded.
+
+On MacOS Big Sur (Intel Chip).
+
+cd into the folder "src" of the "IMonitor-1.4.5" folder. run the following code.
+
+Two files required modified before doing running "make" command.
+
+seqKmer.h:45
++ typedef unsigned long long uint64_t;
+
+connect.cpp:295
++ uLongf uncompLen = SrcBlockSize;
+  
+
+PREFIX=/Users/jingming/Code/GitHub/IMonitor/IMonitor-1.4.5/src make
+
+
+=====
 # Introduction
 
 IMonitor - analyze the sequence data of immune repertoire sequenced by NGS. If paired-end reads(FASTQ) as input, it will be merged to single sequence according to overlap region. FASTA sequence as input is acceptable. It provides re-alignment algorithm to identify accurately V,D,J alleles.Sequencing error will be corrected.CDR3 region can be identified by both VJ gene assignment and conserative region. deletion/insertion of VDJ will be identied and translate nucleotide into amino acid. Multiple statistics and graphs will be provied.
