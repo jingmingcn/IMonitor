@@ -1,0 +1,19 @@
+This file is to help you build and install cope for your system.
+
+Contents
+========
+1. Dependencies
+2. Building
+
+1. Dependencies
+===============
+cope requires the following libraries(with *-devel packages) to compile:
+
+    zlib (http://www.zlib.net/)
+
+2. Building
+===========
+    
+	./configure --prefix=/my/dir
+	make
+	make install

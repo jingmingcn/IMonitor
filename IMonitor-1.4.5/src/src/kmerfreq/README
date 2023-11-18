@@ -1,0 +1,43 @@
+1. Brief introduction
+
+This is a k-mer counter program (version 1.0), it counts k-mer frequence of both strand from sequencing data and uses the array index to represent the codes of k-mers. Program requires 4^K byte computer memory for any data, for example: if KmerSize=17, then the memory usage is 4^17 = 16G, (KmerSize=15 Memory=1G; KmerSize=19 Memory=256G). 
+
+2. Usage:
+
+kmerfreq [OPTION] <reads_files_list>
+
+  One input file <reads_files_list>:
+  the address list of reads file, each reads files take a line, reads file from the same pair-end lane should be neighbored.
+
+        -k <int>   Set the kmer size, default=17.
+                     Note: when k=17, kmer theoretic number is 4^17 = 2^34 = 16G,
+                     store 1 byte for a kmer, the kmer frequence table will use
+                     16G memory(k=16, 4G; k=18, 64G).
+        -c <float> Set min precision rate for kmer, default=-1.
+                     Note: program caculate the precision of kmer base on the quality score,
+                     set between 0~0.99, or -1 for unrestrained.
+        -t <int>   Set the thread number, default=1.
+                     Note: the more thread number, the high speed, however, this should be less than
+                     the number of CPU cores.
+        -q <int>   Set the ASCII shift of the quality value(Q_SHIFT), default=64.
+                     Note: usually 64 or 33 for Illumina data.
+        -m <int>   Set whether to output kmers depth file, 1:yes, 0:no, default=1.
+                     Note: if you just want to get the distribution curve of kmer frequence, set '-m 0'.
+        -b <int>   Set total bases number used to get kmers, default: all the bases of read files.
+                     Note: when sequencing depth is too much, you can set this option, about 30X
+                     data bases is preferred.
+        -p <str>   Set the output prefix, default=output.
+                     Note: often use species name as prefix.
+        -h         Show help information.
+
+
+3. A quick start example: (the frequently-used parameters are showing)
+
+	kmerfreq -k 17 -t 6 -p yeast_k17 yeast_reads.lst >kmerfreq.log 2>kerfreq.err
+  
+  This will generate 4 result file£º
+  (1)k-mer frequence file: in *.freq.cz compressed format, as the input of option '-t' for 'cope' program.
+  (2)compressed block length file: in *.freq.cz.len, as the input of option '-f' for 'cope' program.
+  (3)k-mer frequence statistic file(*.freq.stat). The max frequence is 255, when k-mer frequence larger than 255, it will count as 255.
+  (4)kmerfreq.log: the program running log and analysis result.
+

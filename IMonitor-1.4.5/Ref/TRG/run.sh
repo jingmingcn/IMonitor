@@ -1,0 +1,1 @@
+sh ../bin/run.sh ../../../IMGT_V-QUEST_reference_directory_20210531/Homo_sapiens/TR_format/TRGV.fasta ../../../IMGT_V-QUEST_reference_directory_20210531/Homo_sapiens/TR_format/TRGJ.fasta.V2 V310J38 t.txt TRG . 1

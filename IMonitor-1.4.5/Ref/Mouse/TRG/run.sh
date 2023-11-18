@@ -1,0 +1,1 @@
+sh /hwfssz1/ST_HEALTH/Immune_And_Health_Lab/Public_Software/Immune_repertoire/Common_used/IMonitor-1.3.1/Ref/bin/run.sh TRGV_ref_from_IMGT_sort_20181218.txt TRGJ_ref_from_IMGT_sort_20181218.txt V310J27 t.txt TRG . 1

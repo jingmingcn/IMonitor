@@ -1,0 +1,15 @@
+1. About the open-source code.
+  Program open-source code have been released in: https://sourceforge.net/projects/coperead/ or coperead.sf.net.
+
+2. How to run kmerfreq?
+  When you set mode=1,2 or 3, you need to input the Kmer frequency table(option -t -f), you can get the Kmer frequency table from the program 'kmerfreq'. Read /kmerfreq/README for detail.
+
+3. If the exeutive program of kmerfreq can not work in your computer, it is suggested to use the published jellyfish in bioinformatics. 
+
+4. The full citation for this program is: 
+COPE: An accurate k-mer based pair-end reads connection tool to facilitate genome assembly
+Binghang Liu; Jianying Yuan; Siu-Ming Yiu; Zhenyu Li; Yinlong Xie; Yanxiang
+Chen; Yujian Shi; Hao Zhang; Yingrui Li; Tak-Wah Lam; Ruibang Luo
+Bioinformatics 2012; doi: 10.1093/bioinformatics/bts563
+
+

@@ -1,0 +1,1 @@
+sh /ifs1/ST_MED/USER/zhangwei/Immunity/Bioinf/pipeline/Full_length_ref/run.sh IGKLV_inframe_P_imgt_withgap.fa IGKLJ_inframe_P_imgt_withgap.fa V310J11 t.txt IGKL /ifs1/ST_MED/USER/zhangwei/Immunity/Bioinf/pipeline/Full_length_ref/Mouse/IGKL 1

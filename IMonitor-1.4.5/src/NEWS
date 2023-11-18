@@ -1,0 +1,18 @@
+version v1.1.3 Oct 11th 2012
+-------------------------------------------
+1. changed the format of connected id.
+
+version v1.1.2 Sep 17th 2012
+-------------------------------------------
+1.add option -D -M -H -F -K -R for cross reads, to get the usage of these option, 
+  please read README.
+2.add length information of reads in output file: pair.kmer.list.gz , new format: 
+  "pair_id kmer1 read1_len pos1 kmer2 read2_len pos2".
+3.fix some bugs in output cross information.
+4.fix some bugs in connecting reads with Kmer frequency.
+5.rename program to "cope".
+
+version v1.0.0 Apr 16th 2012
+-------------------------------------------
+This is the first published version.
+

@@ -1,0 +1,1 @@
+sh /hwfssz1/ST_HEALTH/Immune_And_Health_Lab/Public_Software/Immune_repertoire/Common_used/IMonitor-1.3.1/Ref/bin/run.sh TRBV_ref_from_IMGT_sort_20180422.txt TRBJ_ref_from_IMGT_sort_20180422.txt V310J25 t.txt TRB . 1  TRBD_ref_from_IMGT_sort_20180422.txt

@@ -1,0 +1,2 @@
+1. About the open-source code.
+  Program open-source code have been released in: https://sourceforge.net/projects/coperead/.
